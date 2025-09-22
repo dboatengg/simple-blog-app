@@ -8,7 +8,7 @@ export default function AboutPage() {
 
       {/* Intro paragraph */}
       <p className="text-lg text-gray-600 max-w-3xl mb-12">
-        This is a project I built to practice some basics of NextJs. It’s all about learning, experimenting, and building stuffs.
+        This is a project I built to practice some basic concepts in NextJs. It’s all about learning, experimenting, and building stuffs.
       </p>
 
       {/* Two-column section */}
