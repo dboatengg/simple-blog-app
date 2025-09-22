@@ -68,7 +68,15 @@ export default function RootLayout({
 
             {/* Copyright */}
             <p className="text-xs text-gray-200">
-              © {new Date().getFullYear()} Simple Blog.
+                    Made with ❤️ by{" "}
+      <a
+        href="https://github.com/dboatengg"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="font-semibold text-white hover:underline"
+      >
+        Dickson
+      </a>{" "}
             </p>
           </div>
         </footer>
