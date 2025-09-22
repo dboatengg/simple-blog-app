@@ -25,9 +25,53 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}
       >
-        {children}
+        {/* Main content */}
+        <main className="flex-1">{children}</main>
+
+        {/* Footer */}
+        <footer className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-6 mt-10">
+          <div className="container mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+            {/* Logo / Title */}
+            <span className="text-lg font-semibold tracking-wide">
+              Simple Blog
+            </span>
+
+            {/* Links */}
+            <ul className="flex gap-6 text-sm">
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-gray-200 transition-colors"
+                >
+                  Privacy Policy
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-gray-200 transition-colors"
+                >
+                  Terms of Service
+                </a>
+              </li>
+              <li>
+                <a
+                  href="#"
+                  className="hover:text-gray-200 transition-colors"
+                >
+                  Contact
+                </a>
+              </li>
+            </ul>
+
+            {/* Copyright */}
+            <p className="text-xs text-gray-200">
+              © {new Date().getFullYear()} Simple Blog.
+            </p>
+          </div>
+        </footer>
       </body>
     </html>
   );
