@@ -3,7 +3,7 @@ import { posts } from "../../data/posts"
 
 export default function BlogPage() {
   return (
-    <div className="container mx-auto max-w-3xl px-6 py-12">
+    <div className="container mx-auto max-w-3xl py-12">
       <h1 className="text-4xl font-bold mb-6">Blog</h1>
       <p className="text-gray-600 mb-12">
         Read all available posts below.

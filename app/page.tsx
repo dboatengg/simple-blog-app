@@ -14,7 +14,7 @@ export default function HomePage() {
             Welcome to My Simple Blog
           </h1>
           <p className="text-lg text-blue-100 mb-8">
-            Sharing thoughts, tutorials, and insights on web development.
+                Explore a few ideas or topics I’m currently writing about.
           </p>
           <Link
             href="/blog"
