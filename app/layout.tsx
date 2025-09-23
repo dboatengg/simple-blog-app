@@ -1,3 +1,4 @@
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         {/* Main content */}
         <main className="flex-1">{children}</main>
+        <SpeedInsights/>
 
         {/* Footer */}
         <footer className="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-6 mt-10">
